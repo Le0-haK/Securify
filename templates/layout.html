@@ -1,0 +1,52 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <title>
+        Securify
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="{{ url_for('static', filename='css/nucleo-icons.css') }}" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="{{ url_for('static', filename='css/black-dashboard.css') }}?v=1.0.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{{ url_for('static', filename='demo/demo.css') }}" rel="stylesheet" />
+  </head>
+
+  {% block body %}{% endblock %}
+
+
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link">
+            SECURIFY
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link">
+            About Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link">
+            Blog
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script> 2023 made with <i class="tim-icons icon-heart-2"></i> by
+        <a href="javascript:void(0)" target="_blank">Securify</a> for a better web.
+      </div>
+    </div>
+  </footer>
+

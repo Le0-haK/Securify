@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='img/apple-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+  <title>
+    Securify
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="{{ url_for('static', filename='css/nucleo-icons.css') }}" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{{ url_for('static', filename='css/black-dashboard.css') }}?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{{ url_for('static', filename='demo/demo.css') }}" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Optional custom styles */
+    body {
+      background-color: #525f7f;
+      /* Light gray background */
+    }
+
+    .login-container {
+      margin-top: 100px;
+    }
+
+    .card {
+      background-color: #32325d;
+      /* White background */
+      color: #f6f6f6;
+      /* Black text */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container login-container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Login</div>
+          <div class="card-body">
+            <form method="POST" action="{{ url_for('login') }}">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            {% if message %}
+            <p style="color: red;">{{ message }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- Bootstrap JS (optional) -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link">
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link">
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link">
+
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>2023 made with <i class="tim-icons icon-heart-2"></i> by
+        <a href="javascript:void(0)" target="_blank">SECURIFY</a> for a secure app.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
