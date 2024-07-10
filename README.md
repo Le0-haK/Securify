@@ -1,0 +1,3 @@
+As the growth of python increased it also increased the complexity and number of vulnerabilities in the application. By addressing these issue securify act as not only tool but a shift in the method of addressing vulnerabilities within Python applications. The recognition that traditional 
+vulnerability detection techniques are unable to offer a complete defense against the ever-evolving threat landscape led to the development of the project. Securify does not only good in identifying vulnerabilities. It also provides us user-friendly GUI to interact, this also give us information about 
+vulnerabilities. This change in emphasis is a response to the increasing demand for a more thorough  and advanced strategy to counter cybersecurity risks within the Python ecosystem
